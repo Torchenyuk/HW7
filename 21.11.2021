@@ -28,3 +28,15 @@ let current = this.from
     }
 
 console.log([...iterationObject]);
+
+//6
+function* someGenerator(){
+   yield 1;
+   yield 2;
+   yield 3;
+}
+
+const doing = someGenerator();
+console.log(doing.next());
+console.log(doing.next());
+console.log(doing.next());
